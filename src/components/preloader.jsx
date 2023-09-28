@@ -12,7 +12,7 @@ export const Preloader = () => {
           width={70}
           height={70}
           priority
-          className="p-2 rounded-xl bg-white h-max"
+          //   className="p-2 rounded-xl bg-white h-max"
         />
         <Typewriter text="dev_panda" speed={200} delay={2000} />
       </h1>
