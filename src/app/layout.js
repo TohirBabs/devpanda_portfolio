@@ -17,9 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.className} ${space_mono.variable} smooth-scroll`}
-      >
+      <body className={`${inter.className} ${space_mono.variable}`}>
         {children}
       </body>
     </html>

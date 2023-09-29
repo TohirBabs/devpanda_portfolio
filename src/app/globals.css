@@ -30,7 +30,11 @@ body {
   box-sizing: border-box;
 }
 
-.smooth-scroll {
+/* Apply a custom scroll speed */
+.scroll-smooth {
   scroll-behavior: smooth; /* Enable smooth scrolling */
-  transition: scroll-behavior 5s ease-in-out; /* Adjust the duration as needed */
+  scroll-snap-type: y mandatory; /* Enable scroll snapping (optional) */
+  scroll-snap-align: start; /* Align elements at the start of the scroll container (optional) */
+  /* Adjust the scroll speed by modifying the scroll-behavior duration */
+  scroll-behavior: smooth 5s; /* Adjust the duration to control the scroll speed */
 }
