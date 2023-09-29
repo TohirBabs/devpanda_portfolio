@@ -12,9 +12,14 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      keyframes: {
+        fade: {
+          "0%": { opacity: 1 },
+          "100%": { opacity: 0.1 },
+        },
+      },
       animation: {
         blink: "pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-        spin: "animation: spin 1s linear ",
       },
       fontFamily: {
         mono: ["var(--font-space-mono)"],

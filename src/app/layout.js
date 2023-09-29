@@ -6,7 +6,7 @@ const space_mono = Space_Mono({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-space-mono",
-  weight: ["400", "700"],
+  weight: "400",
 });
 
 export const metadata = {
@@ -17,7 +17,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${space_mono.variable}`}>
+      <body
+        className={`${inter.className} ${space_mono.variable} smooth-scroll`}
+      >
         {children}
       </body>
     </html>

@@ -25,3 +25,12 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.smooth-scroll {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+  transition: scroll-behavior 5s ease-in-out; /* Adjust the duration as needed */
+}
