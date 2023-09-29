@@ -4,7 +4,22 @@ import Typewriter from "./typewriter";
 import Image from "next/image";
 
 function Header({ scrollY }) {
+  const [scrollPosition, setScrollPosition] = useState(0);
   const [opacity, setOpacity] = useState(1);
+
+  console.log(scrollPosition);
+  const handleScroll = () => {
+    const position = window.scrollY;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     if (scrollY < 500) {
