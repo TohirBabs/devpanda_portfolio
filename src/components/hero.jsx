@@ -13,7 +13,7 @@ export const Hero = () => {
         // Scroll to the section using scrollIntoView
         sectionRef.current.scrollIntoView({ behavior: "smooth" });
       }
-    }, 2500); // 5000 milliseconds (5 seconds)
+    }, 3000); // 5000 milliseconds (5 seconds)
 
     // Cleanup the timeout if the component unmounts
     return () => {
