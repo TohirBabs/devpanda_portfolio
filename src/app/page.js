@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
       <Header scrollY={scrollPosition} />
-      <Hero />
+      <Hero scrollY={scrollPosition} />
       <About />
     </>
   );

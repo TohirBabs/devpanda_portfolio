@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 
-export const Hero = () => {
+export const Hero = ({ scrollY }) => {
   // Create a ref for the section you want to scroll to
   const sectionRef = useRef(null);
 
