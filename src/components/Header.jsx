@@ -14,9 +14,9 @@ function Header({ scrollY }) {
   return (
     <div
       style={{ opacity: opacity }}
-      className="w-full h-[50vh] flex  justify-center -z-10 sticky top-0"
+      className="w-full h-screen flex  justify-center -z-10 sticky top-0"
     >
-      <h1 className="xl:text-[3.5rem] text-[2rem] font-mono flex gap-2 items-center font-[700] -z-10 ">
+      <h1 className="xl:text-[3.5rem] text-[2.5rem] font-mono flex gap-2 items-center font-[700] -z-10 ">
         <Image
           src="/panda.svg"
           alt="panda emoji"
