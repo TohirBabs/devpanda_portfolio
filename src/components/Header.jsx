@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 import Typewriter from "./typewriter";
 import Image from "next/image";
@@ -16,7 +17,7 @@ function Header({ scrollY }) {
       style={{ opacity: opacity }}
       className="w-full h-screen flex  justify-center -z-10 sticky top-0"
     >
-      <h1 className="xl:text-[3.5rem] text-[2.5rem] font-mono flex gap-2 items-center font-[700] -z-10 pb-[50vh]">
+      <h1 className="xl:text-[3.5rem] text-[2.5rem] font-mono flex gap-2 items-center font-[700] -z-10 pb-[30vh] text-[#f1f2f1]">
         <Image
           src="/panda.svg"
           alt="panda emoji"
