@@ -24,8 +24,8 @@ function Header() {
       data-scroll-speed="5"
       data-scroll-section
     >
-      <h1 className="xl:text-[5.2rem] text-[2.5rem] font-mono flex gap-2 items-center font-[700] pb-[20vh] text-[#f1f2f1]">
-        <div className="w-[6vw] h-[6vw]  relative">
+      <h1 className="lg:text-[5.2rem] text-[2.5rem] font-mono flex gap-2 items-center font-[700] pb-[20vh] text-[#f1f2f1]">
+        <div className="w-[3rem] h-[3rem] lg:w-[6rem] lg:h-[6rem]  relative">
           <Image src="/panda.svg" alt="panda emoji" fill priority />
         </div>
 
@@ -35,7 +35,7 @@ function Header() {
         ref={linkRef}
         href="#hero"
         data-scroll-to
-        className="w-[4.4vw] h-[4.4vw] absolute left-10 bottom-10 rotate-90"
+        className="w-[3rem] h-[3rem] lg:w-[4.4rem] lg:h-[4.4rem] absolute left-10 bottom-10 rotate-90"
       >
         <Image src="/arrow-bottom-large.svg" alt="panda emoji" fill priority />
       </Link>
