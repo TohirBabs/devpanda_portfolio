@@ -23,6 +23,7 @@ export const Hero = () => {
   return (
     <section
       // ref={sectionRef}
+      id="hero"
       className="h-screen p-2 bg-black text-black "
       data-scroll-section
     >
@@ -30,12 +31,12 @@ export const Hero = () => {
         id="stick"
         data-scroll
         data-scroll-class="scaleIn"
-        className="h-full scale-95  p-6 pt-10 lg:p-14 lg:pt-20 bg-white rounded-[3rem] lg:rounded-[4rem] mx-auto"
+        className="h-full scale-90 p-6 pt-10 lg:p-14 lg:pt-20 bg-white rounded-[3rem] lg:rounded-[4rem] mx-auto"
       >
         <h2
           data-scroll
           data-scroll-direction="horizontal"
-          data-scroll-speed="5"
+          data-scroll-speed="3"
           className="lg:text-[5.5rem] text-[2.4rem] font-mono lg:leading-[6rem] "
         >
           developing web applications for user experience
