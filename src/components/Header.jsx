@@ -35,7 +35,7 @@ function Header() {
         ref={linkRef}
         href="#hero"
         data-scroll-to
-        className="w-[2rem] h-[2rem] lg:w-[4.4rem] lg:h-[4.4rem] absolute lg:left-10 lg:bottom-10 left-2 bottom-12 rotate-90"
+        className="w-[2rem] h-[2rem] lg:w-[4.4rem] lg:h-[4.4rem] absolute lg:bottom-10 bottom-12 rotate-90"
       >
         <Image src="/arrow-bottom-large.svg" alt="panda emoji" fill priority />
       </Link>
