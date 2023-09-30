@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "locomotive-scroll": "^4.1.4",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-locomotive-scroll": "^0.2.2",
     "react-scroll-parallax": "^3.4.2"
   },
   "devDependencies": {

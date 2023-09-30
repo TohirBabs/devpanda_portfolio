@@ -1,38 +1,15 @@
-"use client";
-import { useEffect, useState } from "react";
 import Typewriter from "./typewriter";
 import Image from "next/image";
 
-function Header({ scrollY }) {
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const [opacity, setOpacity] = useState(1);
-
-  console.log(scrollPosition);
-  const handleScroll = () => {
-    const position = window.scrollY;
-    setScrollPosition(position);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (scrollY < 500) {
-      setOpacity(1 - scrollY / 500);
-    }
-  }, [scrollY]);
-
+function Header() {
   return (
-    <div
-      style={{ opacity: opacity }}
-      className="w-full h-[83vh] lg:h-[90vh] flex  justify-center -z-10 sticky top-0"
+    <section
+      className="w-full h-screen  flex  justify-center"
+      data-scroll
+      data-scroll-speed="4"
+      data-scroll-section
     >
-      <h1 className="xl:text-[3.5rem] text-[2.5rem] font-mono flex gap-2 items-center font-[700] -z-10 pb-[20vh] text-[#f1f2f1]">
+      <h1 className="xl:text-[3.5rem] text-[2.5rem] font-mono flex gap-2 items-center font-[700]pb-[20vh] text-[#f1f2f1]">
         <Image
           src="/panda.svg"
           alt="panda emoji"
@@ -42,7 +19,7 @@ function Header({ scrollY }) {
         />
         <Typewriter text="dev_panda" speed={100} delay={1000} />
       </h1>
-    </div>
+    </section>
   );
 }
 
