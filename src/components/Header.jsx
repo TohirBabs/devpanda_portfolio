@@ -4,7 +4,7 @@ import Image from "next/image";
 function Header() {
   return (
     <section
-      className="w-full h-screen  flex  justify-center opacity-20"
+      className="w-full h-screen bg-black  flex  justify-center opacity-0"
       data-scroll
       data-scroll-speed="5"
       data-scroll-section

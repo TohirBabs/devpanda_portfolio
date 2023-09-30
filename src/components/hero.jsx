@@ -3,10 +3,12 @@ import React, { useEffect, useRef, useState } from "react";
 
 export const Hero = () => {
   return (
-    <section className="h-screen p-2 bg-black text-black" data-scroll-section>
+    <section className="h-screen p-2 bg-black text-black " data-scroll-section>
       <div
         id="stick"
-        className="h-full  p-6 pt-10 lg:p-14 lg:pt-20 bg-white rounded-[3rem] lg:rounded-[4rem] mx-auto"
+        data-scroll
+        data-scroll-class="scaleIn"
+        className="h-full scale-95  p-6 pt-10 lg:p-14 lg:pt-20 bg-white rounded-[3rem] lg:rounded-[4rem] mx-auto"
       >
         <h2
           data-scroll

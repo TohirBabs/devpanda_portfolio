@@ -118,5 +118,10 @@ html.has-scroll-dragging {
 
 .fadeIn {
   opacity: 1;
-  transition: opacity 4s;
+  transition: opacity 5s;
+}
+
+.scaleIn {
+  transform: scale(1);
+  transition: transform 2s;
 }
