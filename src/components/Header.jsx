@@ -9,7 +9,7 @@ function Header() {
       data-scroll-speed="4"
       data-scroll-section
     >
-      <h1 className="xl:text-[3.5rem] text-[2.5rem] font-mono flex gap-2 items-center font-[700]pb-[20vh] text-[#f1f2f1]">
+      <h1 className="xl:text-[3.5rem] text-[2.5rem] font-mono flex gap-2 items-center font-[700] pb-[20vh] text-[#f1f2f1]">
         <Image
           src="/panda.svg"
           alt="panda emoji"
