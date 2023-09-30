@@ -1,9 +1,24 @@
+"use client";
+import React, { useEffect, useRef, useState } from "react";
+
 export const About = () => {
   return (
-    <div data-scroll-section className="h-screen w-full text-white">
-      <div className="h-full w-full flex items-center justify-center bg-gray rounded-[3rem] lg:rounded-[4rem] ">
-        About
+    <section className="h-screen p-2 bg-black text-black " data-scroll-section>
+      <div
+        id="stick"
+        data-scroll
+        data-scroll-class="scaleIn"
+        className="h-full scale-95  p-6 pt-10 lg:p-14 lg:pt-20 bg-white rounded-[3rem] lg:rounded-[4rem] mx-auto"
+      >
+        <h2
+          data-scroll
+          data-scroll-direction="horizontal"
+          data-scroll-speed="5"
+          className="lg:text-[5.5rem] text-[2.4rem] font-mono lg:leading-[6rem] "
+        >
+          developing web applications for user experience
+        </h2>
       </div>
-    </div>
+    </section>
   );
 };
