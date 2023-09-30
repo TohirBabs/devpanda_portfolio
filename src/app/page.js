@@ -16,7 +16,7 @@ export default function Home() {
       <main data-scroll-container ref={ref}>
         <Header />
         <Hero />
-        <About />
+        <Hero />
       </main>
     </LocomotiveScrollProvider>
   );

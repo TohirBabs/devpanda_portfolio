@@ -115,3 +115,8 @@ html.has-scroll-dragging {
   right: auto;
   bottom: 0;
 }
+
+.fadeIn {
+  opacity: 1;
+  transition: opacity 4s;
+}
