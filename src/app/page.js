@@ -46,8 +46,20 @@ export default function Home() {
     smooth: true,
     getSpeed: true,
     getDirection: true,
-    smoothMobile: "true",
+    smoothMobile: true,
     inertia: 0.75,
+    mobile: {
+      smooth: true,
+      breakpoint: 0,
+      inertia: 0.8,
+      getDirection: true,
+    },
+    tablet: {
+      smooth: true,
+      breakpoint: 0,
+      inertia: 0.8,
+      getDirection: true,
+    },
   };
   return (
     <LocomotiveScrollProvider options={options} containerRef={ref}>
