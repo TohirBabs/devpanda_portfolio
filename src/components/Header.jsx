@@ -4,11 +4,10 @@ import Image from "next/image";
 function Header() {
   return (
     <section
-      className="w-full h-screen bg-black  flex  justify-center opacity-0"
+      className="w-full h-screen bg-black  flex  justify-center"
       data-scroll
       data-scroll-speed="5"
       data-scroll-section
-      data-scroll-class="fadeIn"
     >
       <h1 className="xl:text-[3.5rem] text-[2.5rem] font-mono flex gap-2 items-center font-[700] pb-[20vh] text-[#f1f2f1]">
         <Image
