@@ -24,32 +24,36 @@ export const Hero = () => {
     <section
       // ref={sectionRef}
       id="hero"
-      className="h-screen p-2 bg-black text-black "
+      className=" p-2  bg-black flex flex-col lg:flex-row gap-2 h-max"
       data-scroll-section
     >
       <div
         id="stick"
         data-scroll
         data-scroll-class="scaleIn"
-        className="h-full scale-90 p-6 pt-10 lg:p-14 lg:pt-20 bg-white rounded-[3rem] lg:rounded-[4rem] mx-auto"
+        className="h-full scale-90 p-6  lg:p-14 lg:w-3/5 font-mono  rounded-[3rem] lg:rounded-[4rem] mx-auto"
       >
-        <h2
-          data-scroll
-          data-scroll-direction="horizontal"
-          data-scroll-speed="3"
-          className="lg:text-[5.5rem] text-[2.4rem] font-mono lg:leading-[6rem] "
-        >
-          developing web applications for user experience
+        <h2 className="lg:text-[3rem] text-[2rem]  pr-[5vw]">
+          <div className=" ">
+            i am an <span className="font-mexa"> ARTISTE</span>👨🏼‍🎨
+          </div>
+          <div className=" ">and your web browser</div>
+          <div className=" ">is my canvas🎨</div>
         </h2>
-        <h1
-          data-scroll
-          data-scroll-speed="5"
-          data-scroll-sticky // Attibute that enables the sticky scroll
-          data-scroll-target="#stick"
-          className="lg:text-[4.5rem] text-[2rem] font-mono lg:leading-[6rem] "
-        >
-          Hey Sticky
-        </h1>
+      </div>
+      <div
+        id="stick"
+        data-scroll
+        data-scroll-class="scaleIn"
+        className="h-full scale-90 p-6  lg:p-14 font-mono flex-1  rounded-[3rem] lg:rounded-[3] mx-auto"
+      >
+        <h2 className="lg:text-[3rem] text-[2rem]  pr-[5vw]">
+          <div className=" ">
+            i am an <span className="font-mexa"> ARTISTE</span>👨🏼‍🎨
+          </div>
+          <div className=" ">and your web browser</div>
+          <div className=" ">is my canvas🎨</div>
+        </h2>
       </div>
     </section>
   );

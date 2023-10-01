@@ -65,10 +65,12 @@ export default function Home() {
     <LocomotiveScrollProvider options={options} containerRef={ref}>
       <main data-scroll-container ref={ref}>
         <AnimatedCursor
-          innerSize={30}
-          outerSize={20}
-          color="255,255,255"
-          innerStyle={{ border: "3px rgb(0, 0, 0) solid" }}
+          innerSize={25}
+          outerSize={15}
+          color="0,0,0"
+          innerStyle={{
+            border: "3px rgb(149, 165, 166) solid",
+          }}
         />
         <Header />
         <Hero />

@@ -8,14 +8,9 @@ export const About = () => {
         id="stick"
         data-scroll
         data-scroll-class="scaleIn"
-        className="h-full scale-95  p-6 pt-10 lg:p-14 lg:pt-20 bg-white rounded-[3rem] lg:rounded-[4rem] mx-auto"
+        className="h-full scale-95  p-6 pt-10 lg:p-14 lg:pt-20 bg-pastelGreen rounded-[3rem] lg:rounded-[4rem] mx-auto"
       >
-        <h2
-          data-scroll
-          data-scroll-direction="horizontal"
-          data-scroll-speed="5"
-          className="lg:text-[5.5rem] text-[2.4rem] font-mono lg:leading-[6rem] "
-        >
+        <h2 className="lg:text-[5.5rem] text-[2.4rem] font-mono lg:leading-[6rem] ">
           developing web applications for user experience
         </h2>
       </div>

@@ -9,6 +9,11 @@
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
   --background-end-rgb: 0, 0, 0;
+  --pastelBlue: #a6faff;
+  --pastelGreen: #b8ff9f;
+  --pastelYellow: #fff59f;
+  --pastelRed: #ff9f9f;
+  --pastelPink: #ffa6f6;
 }
 
 @media (prefers-color-scheme: dark) {

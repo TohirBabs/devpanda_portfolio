@@ -7,6 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        pastelBlue: "#a6faff",
+        pastelGreen: "#b8ff9f",
+        pastelYellow: "#fff59f",
+        pastelRed: "#ff9f9f",
+        pastelPink: "#ffa6f6",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -22,7 +29,8 @@ module.exports = {
         blink: "pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
       fontFamily: {
-        mono: ["var(--font-space-mono)"],
+        space: ["var(--font-space-mono)"],
+        mexa: ["var(--font-mexa)"],
       },
       height: {
         screen: ["100vh", "100dvh"],
