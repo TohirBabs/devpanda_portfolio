@@ -1,18 +1,19 @@
+"use client";
 import Link from "next/link";
 import Typewriter from "./typewriter";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Scrambler } from "./Scrambler";
 
 function Header() {
   // Create a reference to the link element
-  const linkRef = useRef(null);
-
+  const [appear, setAppear] = useState(false);
+  console.log(appear);
   useEffect(() => {
     // Set up a timer to click the link after 3 seconds
     const timerId = setTimeout(() => {
       // Simulate a click event on the link
-      linkRef.current.click();
+      setAppear(true);
     }, 4000);
 
     // Clear the timer if the component unmounts
@@ -33,9 +34,11 @@ function Header() {
 
           <Typewriter text="dev_panda" speed={80} delay={0} />
         </h1>
-        <h1 className="lg:text-[2rem] text-[1.2rem] font-space flex gap-2 items-center   text-[#f1f2f1]">
-          <Scrambler text="creative web developer" />
-        </h1>
+        {appear && (
+          <h1 className="lg:text-[2rem] text-[1.2rem] font-space flex gap-2 items-center   text-[#f1f2f1]">
+            <Scrambler text="creative web developer" />
+          </h1>
+        )}
       </div>
       <Link
         ref={linkRef}

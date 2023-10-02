@@ -47,7 +47,7 @@ export const Scrambler = (props) => {
     if (play && activeText < textArray.length - 1) {
       interval = setInterval(() => {
         setActiveText(activeText + 1);
-      }, 90);
+      }, 100);
     } else if (!play) {
       click();
     }
