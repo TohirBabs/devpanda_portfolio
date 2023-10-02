@@ -9,7 +9,7 @@ import {
   Space_Mono,
 } from "next/font/google";
 
-const museo = Space_Grotesk({ subsets: ["latin"], weight: "400" });
+const museo = DM_Sans({ subsets: ["latin"], weight: "400" });
 const space_mono = Space_Mono({
   subsets: ["latin"],
   display: "swap",
