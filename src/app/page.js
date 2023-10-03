@@ -69,7 +69,7 @@ function Home() {
       </div>
 
       <main className="flex-1  h-full  relative text-white">
-        <section className="relative lg:w-[80%] lg:h-screen h-full lg:p-10 p-5 flex flex-col lg:justify-center lg:text-[1.5rem] text-[1.1rem] font-mono gap-5">
+        <section className="relative lg:w-[80%] lg:h-screen h-full lg:p-10 p-5 flex flex-col lg:justify-center lg:text-[1.5rem] text-[1rem] font-mono gap-5">
           <p>hey there&#128075;!,</p>
           <h2 className="lg:text-[2rem] text-[1.5rem] font-space">
             i&apos;m{" "}
