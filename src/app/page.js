@@ -6,7 +6,7 @@ import AnimatedCursor from "react-animated-cursor";
 function Home() {
   return (
     <div className="w-full h-screen bg-black flex flex-col lg:flex-row relative text-black">
-      <AnimatedCursor />
+      <AnimatedCursor color="0, 87, 231" />
       <div className=" flex lg:w-[40%]  w-full lg:gap-4 gap-2 bg-white flex-col justify-between items-center   relative lg:h-full">
         <header className=" lg:p-4 p-2 w-full">
           <h1 className=" lg:text-[2rem] text-[1.5rem] font-space flex gap-2 items-center font-[700]">
@@ -68,7 +68,28 @@ function Home() {
         </nav>
       </div>
 
-      <main className="flex-1  h-full p-10 relative"></main>
+      <main className="flex-1  h-full  relative text-white">
+        <section className="lg:w-[80%] lg:h-screen lg:p-10 p-2 flex flex-col justify-center lg:text-[1.5rem] text-[1rem] font-mono gap-2">
+          <p>hey there👋🏼!,</p>
+          <h2 className="lg:text-[2rem] text-[1.5rem] font-space">
+            i&apos;m{" "}
+            <span className="text-black bg-white p-2 w-max font-[700]">
+              tohir babs
+            </span>
+          </h2>
+
+          <p>
+            <Typewriter
+              speed={20}
+              delay={0}
+              text=" I have a burning curiosity and a deep fascinaton with web
+            technologies which motivates me to build and develop web
+            applications that optimizes user experiences with minimalist
+            principles."
+            />
+          </p>
+        </section>
+      </main>
     </div>
   );
 }
