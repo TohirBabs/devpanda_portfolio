@@ -28,8 +28,8 @@ function Home() {
             <span className="pl-3">web developer</span>
           </h1>
         </header>
-        <div className="w-full flex lg:bg-gradient-to-r bg-gradient-to-b from-transparent from-5% to-black to-70% justify-end">
-          <div className=" lg:w-[370px] w-full h-[350px] lg:h-[350px]  overflow-hidden relative  ">
+        <div className="w-full flex lg:bg-gradient-to-r bg-gradient-to-b from-transparent from-5% to-black to-70% lg:justify-end justify-center">
+          <div className=" lg:w-[370px] w-[31vh] h-[30vh] lg:h-[350px]  overflow-hidden relative  ">
             <Image
               src="/selfai.png"
               alt="panda emoji"
@@ -69,8 +69,8 @@ function Home() {
       </div>
 
       <main className="flex-1  h-full  relative text-white">
-        <section className="lg:w-[80%] lg:h-screen lg:p-10 p-2 py-4 flex flex-col justify-center lg:text-[1.5rem] text-[1.2rem] font-mono gap-3">
-          <p>hey there👋🏼!,</p>
+        <section className="relative lg:w-[80%] lg:h-screen h-full lg:p-10 p-5 flex flex-col lg:justify-center lg:text-[1.5rem] text-[1.1rem] font-mono gap-5">
+          <p>hey there&#128075;!,</p>
           <h2 className="lg:text-[2rem] text-[1.5rem] font-space">
             i&apos;m{" "}
             <span className="text-black bg-white p-2 w-max font-[700]">
@@ -82,12 +82,20 @@ function Home() {
             <Typewriter
               speed={20}
               delay={0}
-              text=" I have a burning curiosity and a deep fascinaton with web
+              text="I have a burning curiosity and a deep fascinaton with web
             technologies which motivates me to build and develop web
             applications that optimizes user experiences with minimalist
             principles."
             />
           </p>
+          <a className=" lg:w-[150px] lg:h-[150px] w-[100px] h-[100px]  lg:block  absolute lg:bottom-10 bottom-5 right-5 lg:-right-10 animate-spin-slow">
+            <Image
+              src="/circletext.png"
+              alt="panda emoji"
+              className="object-fit"
+              fill
+            />
+          </a>
         </section>
       </main>
     </div>
